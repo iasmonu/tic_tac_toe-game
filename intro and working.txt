@@ -1,0 +1,72 @@
+1 > taking input inn for loop again and again
+2 > creating the interfacce fpor tic tok toe game
+3> total 9 move possible
+4> user move
+5>comp move
+ 
+
+
+working:
+a> designing the board:
+  |   |
+----------
+  |   |  
+----------
+  |   |   
+b> it will be having 9 spaces for input
+   taking input
+c> cheacking free space:
+d> player and comp move
+e> main
+
+
+
+designing the board:
+a> a function for inserting the input:
+    funcn req as required a no of times in the main
+    
+   #creating the board
+ board = {'' for x in range(10)}
+
+  #look of the board
+def printBoard(board):
+	print('   |   |   ')
+	print('   |   |   ')
+        print(' ' + board[1] + ' | ' + board[2] + ' | ' + board[3])
+        print('   |   |   ')
+        print('------------')
+        print('   |   |   ')
+        print(' ' + board[4] + ' | ' + board[5] + ' | ' + board[6])
+        print('   |   |   ')
+        print('------------')
+        print('   |   |   ')
+        print(' ' + board[7] + ' | ' + board[8] + ' | ' + board[9])
+        print('   |   |   ')
+
+#checking the winner
+def IsWinner(b,1):
+	return ((b[1] == 1 and b[2] == 1 and b[3] == 1) or
+	(b[4] == l and b[5] == l and b[6] == l) or
+        (b[7] == l and b[8] == l and b[9] == l) or
+        (b[1] == l and b[4] == l and b[7] == l) or
+        (b[2] == l and b[5] == l and b[8] == l) or
+        (b[3] == l and b[6] == l and b[9] == l) or
+        (b[1] == l and b[5] == l and b[9] == l) or
+        (b[3] == l and b[5] == l and b[7] == l))
+	
+
+    def insert_letter(letter,position):
+	board[position] = letter
+	#it fills the position with the letter
+    
+#a function for player move
+
+
+# a function for computer move
+
+
+
+#main 
+
+
+	
